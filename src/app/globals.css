@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #f5f7f8; color: #17232b; font-family: Inter, -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { min-height: 100vh; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+::selection { background: #cbdde2; color: #10232d; }
+@media print {
+  @page { size: A4; margin: 0; }
+  html, body { background: #fff !important; }
+}
+
+/* Shared responsive defaults across every Deal Magsil module */
+html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
+main { min-width: 0; }
+img, svg, canvas { max-width: 100%; }
+input, select, textarea { max-width: 100%; }
+button { -webkit-tap-highlight-color: transparent; }
+@media (max-width: 760px) {
+  body { font-size: 14px; }
+  table { min-width: 640px; }
+  [class*="tableWrap"], [class*="tableWrapper"], [class*="tableContainer"], .table-responsive { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  input, select, textarea { font-size: 16px; }
+}
